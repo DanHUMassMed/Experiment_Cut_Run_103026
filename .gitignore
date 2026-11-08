@@ -1,0 +1,10 @@
+.nextflow*
+work/
+results/
+data/
+.DS_Store
+*.pyc
+.lineage/
+*.tsv
+*.html
+*.txt
