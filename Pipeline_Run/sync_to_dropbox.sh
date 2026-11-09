@@ -22,8 +22,8 @@ echo "Syncing upstream results from ${RESULTS_DIR} to ${REMOTE_DIR}..."
 [[ -d "${RESULTS_DIR}/04_dedup" ]]       && rclone copy -P -vv "${RESULTS_DIR}/04_dedup"       "${REMOTE_DIR}/04_dedup/"       --include "*.txt"
 [[ -d "${RESULTS_DIR}/05_mapq_filter" ]] && rclone copy -P -vv "${RESULTS_DIR}/05_mapq_filter" "${REMOTE_DIR}/05_mapq_filter/" --include "*.sam"
 [[ -d "${RESULTS_DIR}/06_index_bam" ]]   && rclone copy -P -vv "${RESULTS_DIR}/06_index_bam"   "${REMOTE_DIR}/06_index_bam/"   --include "*.*"
-[[ -d "${RESULTS_DIR}/07_ucsc" ]]        && rclone copy -P -vv "${RESULTS_DIR}/07_ucsc"        "${REMOTE_DIR}/07_ucsc/"        --include "**/*"
-[[ -d "${RESULTS_DIR}/08_bigwig" ]]      && rclone copy -P -vv "${RESULTS_DIR}/08_bigwig"      "${REMOTE_DIR}/08_bigwig/"      --include "*.bw"
+[[ -d "${RESULTS_DIR}/07_homer" ]]       && rclone copy -P -vv "${RESULTS_DIR}/07_homer"       "${REMOTE_DIR}/07_homer/"       --include "**/*"
+[[ -d "${RESULTS_DIR}/08_bigwig" ]]      && rclone copy -P -vv "${RESULTS_DIR}/08_bigwig"      "${REMOTE_DIR}/08_bigwig/"      --include "**/*.bw"
 
 echo "Dropbox sync complete for ${EXPERIMENT}!"
 
